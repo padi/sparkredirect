@@ -5,8 +5,9 @@
 
     <script type="text/javascript">
       var userAgent = window.navigator.userAgent;
+      var parameter = window.location.search
       if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-        window.location = "motionapp://"
+        window.location = "motionapp://" + parameter
       }
     </script>
   </head>
